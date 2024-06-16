@@ -1,0 +1,13 @@
+# generated files
+dist/
+obj/
+build/
+bin/
+
+# IDE files
+.vscode/
+
+# downloaded files
+_libs/
+
+Makefile
