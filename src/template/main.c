@@ -1,7 +1,6 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdlib.h>
-#include <stdio.h>
 #include "fujinet-fuji.h"
 
 void via_cmdline(int argc, char *argv[]) {

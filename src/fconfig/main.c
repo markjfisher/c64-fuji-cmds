@@ -8,7 +8,6 @@ char buf[3];
 
 void cputs_cr(char *s) {
 	cputs(s);
-	// cbm_k_chrout('\r');
 	cbm_k_chrout('\n');
 }
 
