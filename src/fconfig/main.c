@@ -1,5 +1,6 @@
-#include <stdlib.h>
 #include <conio.h>
+#include <stdlib.h>
+// #include <stdio.h>
 #include "fujinet-fuji.h"
 
 static AdapterConfigExtended adapterConfig;
@@ -7,7 +8,8 @@ char buf[3];
 
 void cputs_cr(char *s) {
 	cputs(s);
-	cputs("\r\n");
+	// cbm_k_chrout('\r');
+	cbm_k_chrout('\n');
 }
 
 void main() {

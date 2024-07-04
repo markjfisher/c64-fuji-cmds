@@ -1,10 +1,12 @@
 #!/bin/env bash
 
 # CMDS="fcd fconfig fcopy feject fhost finfo fld flh flobby fls fmall fmount fnet fnew freset fscan"
-CMDS="fconfig"
+CMDS="fconfig freset"
 
 for cmd in $CMDS; do
   sed "s#__FUJI_PRG__#${cmd}#" < Makefile.template > Makefile
-  make clean all release
+  rm -rf dist/* obj/* build/* bin/${cmd}.*.prg
+  make all release
+  mkdir bin > /dev/null 2>&1
   mv dist/${cmd}.*.prg bin/
 done
